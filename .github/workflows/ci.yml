@@ -4,9 +4,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     outputs:
-      output_1: ${{ steps.gen_output.outputs.output_1 }}
-      output_2: ${{ steps.gen_output.outputs.output_2 }}
-      output_3: ${{ steps.gen_output.outputs.output_3 }}
+      these: ${{ steps.gen_output.outputs }}
     strategy:
       matrix:
         version: [1, 2, 3]
