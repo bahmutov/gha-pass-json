@@ -15,7 +15,7 @@ jobs:
         id: gen_output
         run: |
           name='{"name":"Joe"}'
-          echo "output_${matrix.version}=${name}" >> "$GITHUB_OUTPUT"
+          echo "output_${{ matrix.version }}=${name}" >> "$GITHUB_OUTPUT"
   job2:
     runs-on: ubuntu-latest
     needs: [job1]
